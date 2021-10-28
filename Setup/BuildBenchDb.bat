@@ -4,7 +4,7 @@ setlocal EnableDelayedExpansion
 set "startTime=%time: =0%"
 
 echo Building BenchDb
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe" ..\..\BenchDb.sln /rebuild Debug
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\devenv.exe" ..\BenchDb.sln /rebuild Debug
 
 set "endTime=%time: =0%"
 
@@ -21,6 +21,4 @@ echo Start:    %startTime%
 echo End:      %endTime%
 echo Elapsed:  %hh:~1%%time:~2,1%%mm:~1%%time:~2,1%%ss:~1%%time:~8,1%%cc:~1%
 
-echo
-echo Press any key to exit
 pause
