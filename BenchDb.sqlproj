@@ -81,6 +81,7 @@
     <Folder Include="dbo\Stored Procedures\Procs3\" />
     <Folder Include="dbo\Stored Procedures\Procs4\" />
     <Folder Include="Security\" />
+    <Folder Include="Setup" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="MySchema\Tables\Tables1\MyTable_00000.sql" />
@@ -8085,5 +8086,9 @@
     <Build Include="dbo\Stored Procedures\Procs4\Get_MyTable_01999.sql" />
     <Build Include="Security\MySchema.sql" />
     <Build Include="Security\MyViews.sql" />
+    <None Include="Setup\BenchDb.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Setup\BuildBenchDb.bat" />
   </ItemGroup>
 </Project>
