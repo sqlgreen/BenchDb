@@ -1,0 +1,22 @@
+<Project Sdk="MSBuild.Sdk.SqlProj/2.0.0">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<SqlServerVersion>Sql130</SqlServerVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="MyViews\**\*.sql" />
+	<Content Include="Security\*.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="*.dbmdl" />
+    <None Remove="*.jfm" />
+  </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../BenchDbTables/BenchDbTables.Build.csproj" />
+    </ItemGroup>
+	
+</Project>
